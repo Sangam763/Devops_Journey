@@ -1,0 +1,44 @@
+Git is the most widely used distributed Version Control System (VCS). Below is a complete cheatsheet and setup guide for installing and configuring Git on an AWS Linux instance, alongside initial GitHub setup.
+
+Prerequisites & Linux Setup :
+Launch Instance
+Create an EC2 Linux instance (e.g., Ubuntu) on AWS.
+
+
+Update Package Manager   ------>   sudo apt-get update
+
+Install Git  ------------>sudo apt-get install git -y
+
+
+Local Environment & Git Configuration :
+Create and Enter a Working Directory
+
+-----------> mkdir my-project
+-----------> cd my-project
+
+
+Initialize a Local Git Repository
+----------> git init
+Configure Global Author Identity
+
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+-----------------------------------------------------------------------------------------------------------------------
+
+GitHub Account & Remote Repository Setup
+Sign Up for GitHub
+Create an account at github.com/signup.
+Create a Remote Repository
+Navigate to the Repositories tab in your GitHub dashboard.
+Click New to create a repository.
+Copy the URL
+Create a password token for GITHUB
+git remote add origin <git_repo –url>
+git  remote set-url origin https://<token> @<url>
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
